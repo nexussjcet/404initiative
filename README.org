@@ -1,0 +1,10 @@
+* Finding 404
+- *Finding 404* is an initiative by The Nexus SJCET along with Mozilla SJCET and IEDC Bootcamp, SJCET to educate the students regarding web technologies and create awareness regarding Digital Freedom, online privacy, need for decentralization etc.
+
+- *Meetup Time*: Every Wednessday 4:30pm -6:00pm 
+
+- The nature of the sessions are simillar to that of a group discussion as opposed to that of a generic class. 
+
+- Everyone's welcome
+
+- The Meetup is subject to the following [[https://github.com/nexussjcet/logistics/blob/master/Code%2520Of%2520Conduct.md][code of conduct]].
