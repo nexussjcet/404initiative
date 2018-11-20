@@ -5,15 +5,71 @@
 #+OPTIONS: toc:nil
 * Basic HTML Structure
   #+BEGIN_SRC html
+  <!DOCTYPE html>
   <html>
   <head>
   <title>website title</title>
   </head>
+  <meta charset="utf-8">
   <body>
   content of website ...
   </body>
   </html>
   #+END_SRC
+
+  #+BEGIN_SRC html
+<!DOCTYPE html>
+  #+END_SRC
+  
+This is what every website should start with. This line basically tells your browser (the thing you use to browse the web) that the website is using the latest version of HTML, HTML5.
+
+  #+BEGIN_SRC html
+<html>
+  #+END_SRC
+  
+This is the starting html tag.
+
+You now may be wondering what 'tags' are. In their simplest form, tags tell the browser what to do with the stuff inside of them.
+
+If you take a took at the last line of code, you'll see the ending html tag. You can tell it's the ending tag because it has a forward slash before the name of the tag.
+
+Everything between the starting and ending tags is affected by them. In this case, html tags tell the browser that whatever is inside of them should be part of the website.
+
+  #+BEGIN_SRC html
+<head>
+#+END_SRC
+
+More tags! Yes, you can have tags inside of tags.
+
+The head tag can contain a lot of stuff like styles and scripts, but in this example it contains two things. Let's take a look at them! Sidenote: you can't see anything in the head tags.
+
+  #+BEGIN_SRC html
+<meta charset="utf-8">
+#+END_SRC
+
+All this scary looking line does is tell the browser which character set you want to use. Basically, by adding this line, you get more characters. Hooray! Sidenote: meta tags don't need to be ended.
+
+#+BEGIN_SRC html
+<title>Project2 Tutorials</title>
+#+END_SRC
+
+Yes, you can have the starting and ending tags on the same line, which is very useful if you don't have much stuff in them, like here!
+
+The title tag tells the browser what to put in the tabs at the top, or the title of the browser window. In this case, it would put Project2 Tutorials in the tab.
+
+#+BEGIN_SRC html
+<body>
+#+END_SRC
+
+The body 
+tag contains all the stuff that you can see on the website, such as text, images, and links. In this example, we only have one thing inside the body tags.
+
+#+BEGIN_SRC html
+<h1>Welcome!</h1>
+#+END_SRC
+
+The h1 tag makes all the text inside of it big and bold! In this case, the word 'welcome' is that text.
+
 * Common Tags
   #+BEGIN_SRC html
 -  <h?> heading </h?>	                Heading (h1 for largest to h6 for smallest)
