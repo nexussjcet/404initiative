@@ -7,4 +7,4 @@
 
 - Everyone's welcome
 
-- The Meetup is subject to the following [[https://github.com/nexussjcet/logistics/blob/master/Code%2520Of%2520Conduct.md][code of conduct]].
+- The Meetup is subject to the following [[https://github.com/nexussjcet/logistics/blob/master/Code%20Of%20Conduct.md][code of conduct]].
