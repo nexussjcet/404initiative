@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <header><title>Unititled</title></header>
+    <style>
+     body{
+	 margin:1em auto;
+	 max-width:40em;
+	 padding:0 .62em;
+	 font:1.2em/1.62 sans-serif;
+     }
+     h1,h2,h3 {
+	 line-height:1.2;
+     }
+     @media print{
+	 body{
+	     max-width:none
+	 }
+     }
+    </style>
+    <body>
+	<nav id="top">
+	    <a href="#para1">Section 1</a>
+	    <a href="#para2">Section 2</a>
+	    <a href="#lists">Lists</a>
+	</nav>	
+	<h1>Hello World</h1>
+	<h2>Paragraphs</h2>
+	<div id="para1">
+	    <p>Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.</p>
+	</div>
+	<div id="para2">
+	    <p>Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.</p>
+	</div>
+	<div id="lists">
+	    <h2>Lists</h2>
+	    <h3>Ordered Pair</h3>
+	    <ol type="I">
+		<li>Element 1</li>
+		<li>Element 2</li>
+		<ol type="i">
+		    <li>Sub-element 1</li>
+		    <li>Sub-element 2</li>
+		    <li>Sub-element 3</li>
+		    <li>Sub-element 4</li>
+		</ol>
+		<li>Element 3</li>
+		<li>Element 4</li>
+	    </ol>
+	    <h3>Unordered Pair</h3>
+	    <ul>
+		<li>Element 1</li>
+		<li>Element 2</li>
+		<ul>
+		    <li>Sub-element 1</li>
+		    <li>Sub-element 2</li>
+		    <li>Sub-element 3</li>
+		    <li>Sub-element 4</li>
+		</ul>
+		<li>Element 3</li>
+		<li>Element 4</li>
+	    </ul>
+	</div>
+	<h2>Multi-media</h2>
+	<div id="video">
+	    <video width="480" height="270" controls>
+		<source src="linux.mkv" type="video/mp4">
+		Your browser does not support the video tag.
+	    </video>
+	</div>
+	<h2>Forms</h2>
+	<form>
+	    <div>
+		<p>Enter your name</p>
+		<input name="name" type="text" placeholder="Name">
+		<br>
+		<p>Age:</p>
+		<input name="age" type="number" placeholder="Age">
+		<br>
+		<p>Enter You Password</p>
+		<input name="password" type="password" placeholder="Password">
+		<p>What's your favourite color</p>
+		<input name="color" type="radio" value="red">Red
+		<input name="color" type="radio" value="blue">Blue
+		<input name="color" type="radio" value="green">Green
+		<p>Occupation:</p>
+		<input name="Occupation" list="occupation" placeholder="Occupation">
+		<datalist id="occupation">
+		    <option value="Student">
+			<option value="Jobless">
+	    </div>
+	    <br>
+	    <button formaction="#top">Top</button>
+	    <footer><p>Copyleft. Licenced Under GPL V3</p></footer>
+    </body>
+</html>
+
