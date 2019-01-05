@@ -1,0 +1,143 @@
+#+TITLE:Introduction to Flask
+
+* Basics of Python
+** Hello World
+   Typical way to start learning a program.
+   #+BEGIN_SRC python
+   print("Hello World")
+   #+END_SRC
+   Here:
+   "print"- the function
+   "Hello World"- the argument
+** Taking in inputs
+   We'll be using a function in python called input(). Notice that we do not need to add/declare libraries like we do in other languages like C for example, the python interpreter does that for us automatically. 
+   #+BEGIN_SRC python
+   name=input()
+   print(f"hello, {name}!")
+   #+END_SRC
+** Interpreter vs Compiler
+| Interpreter                                                                                                      | Compiler                                                                                                         |
+|------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------|
+| Translates program one statement at a time.                                                                      | Scans the entire program and translates it as a whole into machine code.                                         |
+| It takes less amount of time to analyze the source code but the overall execution time is slower.                | It takes large amount of time to analyze the source code but the overall execution time is comparatively faster. |
+| No intermediate object code is generated, hence are memory efficient.                                            | Generates intermediate object code which further requires linking, hence requires more memory.                   |
+| Continues translating the program until the first error is met, in which case it stops. Hence debugging is easy. | It generates the error message only after scanning the whole program. Hence debugging is comparatively hard.     |
+| Programming language like Python, Ruby use interpreters.                                                         | Programming language like C, C++ use compilers.                                                                  |
+
+Python is a /“Compiled Interpreted”/ language.
+   Means when Python program is run,
+   - First Python checks for program syntax
+   - Compiles and converts it to bytecode and directly bytecode is loaded in system memory.
+   - Then compiled bytecode interpreted from memory to execute it.
+** Datatypes
+   Different kinds of data needs to be treated differently.
+   common datatypes:
+   - Integer
+   - Floating Point
+   - Booloean
+   - Null
+   #+BEGIN_SRC python
+   i=28
+   print(f"is is {i}")
+   f=2.8
+   print(f"is is {f}")
+   b=True
+   print(b"is is {b}")
+   n=None
+   print(n"is is {n}")
+   #+END_SRC
+** Conditional Statement
+   Indentation is key.
+   #+BEGIN_SRC python
+   x=0
+   x=input()
+   if x>0:
+      print("x is positive")
+   elif x<0:
+      print("x is negative")
+   else:
+      print("x is zero")
+   #+END_SRC
+** Sequences of Data
+   - Strings
+     #+BEGIN_SRC python
+     name="Alice"
+     print(name[2]) # should return i
+     #+END_SRC
+   - Tuples
+     #+BEGIN_SRC python
+     coord=(10.0,20.0)
+     print(coord[1]) # should return 20.0
+     #+END_SRC
+   - Lists
+     #+BEGIN_SRC python
+     names=("Alice","Bob","Charlie")
+     print(names[2]) # should return Charlie
+     #+END_SRC
+** Iteration
+   Simple loop
+   #+BEGIN_SRC python
+   for i in range(5):
+       print(i)
+   #+END_SRC
+   Looping over a sequence
+   #+BEGIN_SRC python
+   names=("Alice","Bob","Charlie")
+   for name in names:
+       print(name)
+   #+END_SRC
+** Advanced Datatypes
+****   Set
+     Focus on the elements in the sequence and not on the order.
+     #+BEGIN_SRC python
+     s=set()
+     s.add(0)
+     s.add(1)
+     s.add(2)
+     s.add(3)
+     s.add(1)
+     print(s)
+     #+END_SRC
+**** Dictionaries
+     map certain values to others
+     #+BEGIN_SRC python
+     ages={"Alice":19,"Bob":18}
+     ages["Charlie"]= 30
+     ages["Alice"] += 30
+     #+END_SRC
+** Functions
+**** Declaring and calling.
+   we've seen functions like =print= in action. We can create our own functions.
+   #+BEGIN_SRC python
+   def square(x):
+       return x*x
+   for i in range(5):
+       print("{} squared is {}".format(i,square(i)))
+   #+END_SRC
+**** Importing functions from a Different file 
+     -file functions.py
+     #+BEGIN_SRC python
+   def square(x):
+       return x*x
+   def main():
+       for i in range(5):
+           print("{} squared is {}".format(i,square(i)))
+   if __name__ == "__main__":
+      main()
+     #+END_SRC
+     - file: modules.py
+     #+BEGIN_SRC python
+     from functions import square
+          print(sqaure(10))
+     #+END_SRC
+** Classes
+   User defined Datatypes.
+   #+BEGIN_SRC python
+   class point:
+         def __init__(self, x, y):
+             self.x=x
+             self.y=y
+   p= point(3,5)
+   print(p.x)
+   print(p.y)
+   #+END_SRC
