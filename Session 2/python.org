@@ -1,6 +1,4 @@
-#+TITLE:Introduction to Flask
-
-* Basics of Python
+* Basics of Python for web development
 ** Hello World
    Typical way to start learning a program.
    #+BEGIN_SRC python
