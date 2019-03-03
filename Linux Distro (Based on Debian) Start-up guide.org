@@ -8,7 +8,10 @@
   wget  https://go.microsoft.com/fwlink/?LinkID=760868
   sudo apt install ./<file>.deb
 
-- Sublime Text Editor
+- Sublime Text Editor 
+	sudo add-apt-repository ppa:webupd8team/sublime-text-3
+	sudo apt-get update
+	sudo apt-get install sublime-text-installer
 
 ** Video and Graphics Tools:
 
